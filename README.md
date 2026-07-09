@@ -63,6 +63,9 @@ Supported commands:
 
 ---
 
-This project was completed as part of the **Electrothon Digital Challenge**, focusing on digital logic design, finite state machines, sequential circuits, and UART communication. :contentReference[oaicite:1]{index=1}
+This project was completed as part of the **Electrothon Digital Challenge**, focusing on digital logic design, finite state machines, sequential circuits, and UART communication. 
+
+NAME:- Siddhartha Ch V S   
+ROLL NO:- 250102094
 
 
