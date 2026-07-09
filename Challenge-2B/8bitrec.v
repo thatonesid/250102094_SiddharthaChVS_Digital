@@ -16,19 +16,6 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
-// DESIGN EXPLANATION
-// So, the Frame Packet Reciever is designed used 4 state FSM and the states
-// and their functioning is explained below.
-// 1. S0: Works as an IDLE state, initiliazes bit count to 0 and waits for start bit.
-// 2. S1: Reading State, as soon as start bit is read, the data bits are stored in a tempo
-// 
-//
-//
-//
-//
-//
-//
 //////////////////////////////////////////////////////////////////////////////////
 
 
