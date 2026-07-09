@@ -19,31 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-// =============================================================================
-// cmd_receiver.v -- Bonus Challenge: Command Receiver
-// =============================================================================
-// Frame on the serial line "x" (LSB of every multi-bit field is the bit
-// transmitted first -- same convention as the plain byte receiver):
-//
-//   | Start(0) | cmd[0] | cmd[1] | data[0] .. data[7] | parity | Stop(1) |
-//
-// Two internal 8-bit registers, A and B, are updated according to the 2-bit
-// command field:
-//   cmd = 00 : LOAD_A -> A <= data          , result = new value of A
-//   cmd = 01 : LOAD_B -> B <= data          , result = new value of B
-//   cmd = 10 : ADD    -> (A, B unchanged)   , result = A + B
-//   cmd = 11 : CLEAR  -> A <= 0, B <= 0     , result = 0
-//
-// A command is executed ONLY if the frame has neither a parity error nor a
-// framing error. "done" pulses for exactly one cycle at the end of every
-// frame (whether or not it was error-free) so a receiver can use it as a
-// "frame complete, check parity_err/frame_err/result now" strobe. On an
-// erroneous frame the command is skipped (A and B are left untouched) and
-// result is forced to 0, matching the same behavior as data_out in the
-// plain byte receiver.
-// =============================================================================
-
 module bonus(
     input clk,
     input reset_n,     
