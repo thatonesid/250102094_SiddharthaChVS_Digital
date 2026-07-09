@@ -1,4 +1,4 @@
-# Digital_250102094 
+# Electrothon 2026 Digital PS Submission
 
 This repository contains my solutions for the **Electrothon Digital Problem Statement**, covering both hardware design and Verilog-based digital system design challenges. 
 
